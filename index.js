@@ -1,23 +1,38 @@
 // QUESTION 1
-function instagramPost() {
-  this.Handle = "9jafoodpot";
-  this.content = "food";
-  this.link = "https://www.instagram.com/p/CofyMJUOJyZ/";
-  this.views = 200;
-  this.likes = 150;
+function instagramPost(Handle, content, link, views, likes) {
+  this.Handle = Handle;
+  this.content = content;
+  this.link = link;
+  this.views = views;
+  this.likes = likes;
 }
 
-let post = new instagramPost();
-console.log(post);
+// Question 2
+let post1 = new instagramPost('d_techcentrix', 'digital transformation', 'https://www.instagram.com/p/Co0EvNaDNRb/', 1000, 150);
+console.log(post1);
+/*
+instagramPost {
+  Handle: 'd_techcentrix',
+  content: 'digital transformation',
+  link: 'https://www.instagram.com/p/Co0EvNaDNRb/',
+  views: 1000,
+  likes: 150
+}
+*/
+
+let post2 = new instagramPost('9jafoodpot', 'food', 'https://www.instagram.com/p/CofyMJUOJyZ/', 3000, 200);
+console.log(post2);
 /*
 instagramPost {
   Handle: '9jafoodpot',
   content: 'food',
   link: 'https://www.instagram.com/p/CofyMJUOJyZ/',
-  views: 200,
-  likes: 150
+  views: 3000,
+  likes: 200
 }
 */
+
+
 // QUESTION 3
 function createPerson(name, age, location) {
   return {
